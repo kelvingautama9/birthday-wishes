@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Viona 🎉</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container glass">
+    <h1 class="title">🎈 Happy Birthday, Viona! 🎂</h1>
+    <p class="subtitle">You're the sweetest part of my every day ✨</p>
+
+    <!-- Musik Latar -->
+    <audio id="bg-music" src="assets/music.mp3" loop></audio>
+    <button onclick="document.getElementById('bg-music').play()">🎵 Putar Musik</button>
+
+    <!-- Kue Ulang Tahun Interaktif -->
+    <div class="cake-section">
+      <p class="subtitle">🎂 Yuk tiup lilinnya!</p>
+      <div class="cake-box">
+        <img id="cake-img" src="assets/cake-with-candle.png" alt="Cake" class="glow" />
+      </div>
+      <button id="blow-btn">Tiup Lilin 🎈</button>
+    </div>
+
+    <!-- Surat Cinta Animasi -->
+    <div class="love-letter-section">
+      <button id="love-btn">💌 Baca Surat Cinta</button>
+      <div id="love-letter" class="glass hidden">
+        <p id="letter-text"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
